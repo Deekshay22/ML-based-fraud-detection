@@ -43,13 +43,11 @@ try:
     # Connect to MongoDB Atlas
     client = pymongo.MongoClient(connection_string)
 
-    # Access your database (replace 'your-database' with the actual name)
+    
     db = client["deepesh"]
 
-    # Perform your database operations here...
-    # For example, you can retrieve a collection and fetch some data:
-    collection = db["user"]  # Replace 'your-collection' with the actual collection name
-
+   
+    collection = db["user"]  
     # Print the fetched data
 
 except pymongo.errors.ConnectionFailure as e:
